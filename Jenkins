@@ -21,7 +21,7 @@ pipeline {
 				build job: 'deploy-to-staging'
 			}
 			post {
-                success {
+                failure {
                     echo 'code depoying to staging server'
                 }
             }
